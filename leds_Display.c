@@ -1,21 +1,9 @@
 /*
 Autor (a): Alícia Oliveira Araújo
 
-Tarefa WLS - Aula Síncrona do dia 27/01/2025
+U4C6 - TarefaWLS - Aula Síncrona do dia 03/02/2025
 
-Última modificação: 02/02/2025
-*/
-
-/*
- * Por: Wilton Lacerda Silva
- *    Comunicação serial com I2C
- *  
- * Uso da interface I2C para comunicação com o Display OLED
- * 
- * Estudo da biblioteca ssd1306 com PicoW na Placa BitDogLab.
- *  
- * Este programa escreve uma mensagem no display OLED.
- * 
+Última modificação: 09/02/2025
 */
 
 #include <stdio.h>
