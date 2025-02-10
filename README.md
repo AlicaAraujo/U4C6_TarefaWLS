@@ -60,7 +60,7 @@ O projeto está organizado da seguinte forma (descrição dos arquivos principai
 
 Confira o vídeo com a execução desta tarefa na placa BitDogLab:
 
-[Assista ao vídeo]()
+[Assista ao vídeo](https://youtube.com/shorts/_qsMb_JlSrA?si=u1b4Rn5j-IVVSMnk)
 
 <h2 align="center">📅 Informações</h2>
 
