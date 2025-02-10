@@ -65,9 +65,7 @@ Confira o vídeo com a execução desta tarefa na placa BitDogLab:
 <h2 align="center">📅 Informações</h2>
 
 📌 Autor(a): Alícia Oliveira Araújo
-
 📅 Data da Aula: 03/02/2025
-
 🛠 Última Modificação do Código: 09/02/2025
 
 Projeto desenvolvido como parte da Residência de Sistemas Embarcados - EmbarcaTech.
