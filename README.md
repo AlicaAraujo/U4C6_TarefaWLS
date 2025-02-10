@@ -1,4 +1,4 @@
-<h1 align="center">Interrupções, Matriz de LEDs e Display OLED ⚠️ 🟥🟩🟦🟨</h1>
+<h1 align="center">🔌 Controle de Hardware com RP2040 - Matriz de LEDs, LEDs RGB, Botões e Display OLED 🎛️✨</h1>
 
 <h2 align="center">Descrição do Projeto 📝</h2>
 
