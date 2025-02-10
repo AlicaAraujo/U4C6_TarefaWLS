@@ -35,22 +35,39 @@ pico_sdk_init()
 
 # Add executable. Default name is the project name, version 0.1
 
-add_executable(leds_Display leds_Display.c )
+add_executable(leds_Display 
+    leds_Display.c
+    bibliotecas/botao.c 
+    bibliotecas/leds.c 
+    bibliotecas/interrupcoes.c
+    bibliotecas/matriz.c
+    bibliotecas/animacoes.c
+    bibliotecas/ssd1306.c
+)
 
 pico_set_program_name(leds_Display "leds_Display")
 pico_set_program_version(leds_Display "0.1")
 
 # Modify the below lines to enable/disable output over UART/USB
-pico_enable_stdio_uart(leds_Display 1)
+pico_enable_stdio_uart(leds_Display 0)
 pico_enable_stdio_usb(leds_Display 1)
 
+pico_generate_pio_header(leds_Display ${CMAKE_CURRENT_LIST_DIR}/leds_Display.pio)
+
 # Add the standard library to the build
-target_link_libraries(leds_Display
-        pico_stdlib)
+target_link_libraries(leds_Display PRIVATE
+        pico_stdlib
+        hardware_pio
+        hardware_adc
+        pico_bootrom
+        hardware_i2c
+        hardware_clocks
+        hardware_uart)
 
 # Add the standard include files to the build
 target_include_directories(leds_Display PRIVATE
         ${CMAKE_CURRENT_LIST_DIR}
+        ${CMAKE_CURRENT_LIST_DIR}/bibliotecas
 )
 
 # Add any user requested libraries
@@ -59,4 +76,3 @@ target_link_libraries(leds_Display
         )
 
 pico_add_extra_outputs(leds_Display)
-
